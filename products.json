@@ -1,0 +1,293 @@
+{
+  "collectionIds": [
+    "LUME-DEC-001",
+    "LUME-GFT-002",
+    "LUME-FES-003",
+    "LUME-CUS-004"
+  ],
+  "bestSellerIds": [
+    "LUME-BST-101",
+    "LUME-BST-102",
+    "LUME-BST-103",
+    "LUME-BST-104"
+  ],
+  "bestSellerMode": "random",
+  "bestSellerModeOptions": [
+    "fixed",
+    "random"
+  ],
+  "randomBestSellerCount": 4,
+  "collectionMode": "fixed",
+  "collectionModeOptions": [
+    "fixed",
+    "random"
+  ],
+  "randomCollectionCount": 4,
+  "products": [
+    {
+      "code": "LUME-DEC-001",
+      "model": "Decorative Candles",
+      "price": 499,
+      "priceLabel": "From Rs. 499",
+      "description": "Sculptural candles designed for shelves, tables, and cozy corners.",
+      "image": "https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Decorative candle collection",
+      "category": "Decor",
+      "subCategory": "Sculptural"
+    },
+    {
+      "code": "LUME-GFT-002",
+      "model": "Gift Candles",
+      "price": 699,
+      "priceLabel": "From Rs. 699",
+      "description": "Elegant, ready-to-gift candles for birthdays, hosts, and thank-you moments.",
+      "image": "https://images.unsplash.com/photo-1594360439490-cb29ee2b3e06?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Black candle holder with a lighted candle",
+      "category": "Gifting",
+      "subCategory": "Ready to Gift"
+    },
+    {
+      "code": "LUME-FES-003",
+      "model": "Festive Collection",
+      "price": 899,
+      "priceLabel": "From Rs. 899",
+      "description": "Warm seasonal fragrances and premium hampers for celebration gifting.",
+      "image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Festive candles with warm lighting",
+      "category": "Seasonal",
+      "subCategory": "Festive Hampers"
+    },
+    {
+      "code": "LUME-CUS-004",
+      "model": "Custom Orders",
+      "price": 0,
+      "priceLabel": "Custom Quote",
+      "description": "Personalized colors, labels, fragrances, and packaging for special events.",
+      "image": "https://images.unsplash.com/photo-1603897076223-17f346f02a03?q=80&w=1600&auto=format&fit=crop",
+      "alt": "Custom candle packaging",
+      "category": "Custom",
+      "subCategory": "Personalized Orders"
+    },
+    {
+      "code": "LUME-SPA-005",
+      "model": "Spa Ritual Candles",
+      "price": 599,
+      "priceLabel": "From Rs. 599",
+      "description": "Calming candles with lavender, eucalyptus, and soft herbal notes.",
+      "image": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Spa candle collection",
+      "category": "Wellness",
+      "subCategory": "Spa Rituals"
+    },
+    {
+      "code": "LUME-LUX-006",
+      "model": "Luxury Jar Candles",
+      "price": 799,
+      "priceLabel": "From Rs. 799",
+      "description": "Premium glass jar candles made for elegant rooms and thoughtful gifts.",
+      "image": "https://images.unsplash.com/photo-1616963895284-e313c65f4a56?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Luxury jar candle collection",
+      "category": "Luxury",
+      "subCategory": "Jar Candles"
+    },
+    {
+      "code": "LUME-MIN-007",
+      "model": "Mini Candle Sets",
+      "price": 999,
+      "priceLabel": "From Rs. 999",
+      "description": "Assorted mini candles for hampers, trial sets, and table styling.",
+      "image": "https://images.unsplash.com/photo-1543198126-a8ad8e47fb22?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Mini candle set collection",
+      "category": "Gifting",
+      "subCategory": "Mini Sets"
+    },
+    {
+      "code": "LUME-WED-008",
+      "model": "Wedding Favors",
+      "price": 129,
+      "priceLabel": "From Rs. 129 each",
+      "description": "Personalized mini candles for weddings, engagements, and return gifts.",
+      "image": "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Wedding candle favors",
+      "category": "Events",
+      "subCategory": "Wedding Favors"
+    },
+    {
+      "code": "LUME-ARO-009",
+      "model": "Aromatherapy Candles",
+      "price": 749,
+      "priceLabel": "From Rs. 749",
+      "description": "Balanced fragrance blends for unwinding, focus, and quiet routines.",
+      "image": "https://images.unsplash.com/photo-1602910344008-22f323cc1817?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Aromatherapy candle collection",
+      "category": "Wellness",
+      "subCategory": "Aromatherapy"
+    },
+    {
+      "code": "LUME-COR-010",
+      "model": "Corporate Hampers",
+      "price": 1499,
+      "priceLabel": "From Rs. 1,499",
+      "description": "Premium candle hampers with custom branding for teams and clients.",
+      "image": "https://images.unsplash.com/photo-1603897076223-17f346f02a03?q=80&w=1600&auto=format&fit=crop",
+      "alt": "Corporate candle hamper collection",
+      "category": "Gifting",
+      "subCategory": "Corporate Hampers"
+    },
+    {
+      "code": "LUME-BST-101",
+      "model": "Vanilla Amber Jar",
+      "price": 799,
+      "tag": "Best seller",
+      "description": "Soft amber, vanilla cream, and quiet evening warmth.",
+      "image": "https://images.unsplash.com/photo-1616963895284-e313c65f4a56?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Vanilla amber candle",
+      "category": "Jar Candles",
+      "subCategory": "Warm & Sweet"
+    },
+    {
+      "code": "LUME-BST-102",
+      "model": "Ivory Bloom Set",
+      "price": 1199,
+      "tag": "Gift pick",
+      "description": "Aesthetic gift box with floral notes and custom message card.",
+      "image": "https://images.unsplash.com/photo-1543198126-a8ad8e47fb22?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Luxury candle and florals",
+      "category": "Gift Sets",
+      "subCategory": "Floral"
+    },
+    {
+      "code": "LUME-BST-103",
+      "model": "Minimal Pillar Pair",
+      "price": 649,
+      "tag": "Premium",
+      "description": "Decorative pillars for coffee tables, shelves, and event styling.",
+      "image": "https://images.unsplash.com/photo-1608755728617-aefab37d2edd?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Minimal handmade candles",
+      "category": "Decor",
+      "subCategory": "Pillar Candles"
+    },
+    {
+      "code": "LUME-BST-104",
+      "model": "Golden Glow Hamper",
+      "price": 1499,
+      "tag": "Festive",
+      "description": "Muted gold details, warm fragrances, and festive packaging.",
+      "image": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Cozy candle closeup",
+      "category": "Gift Sets",
+      "subCategory": "Festive"
+    },
+    {
+      "code": "LUME-BST-105",
+      "model": "Rose Petal Tin",
+      "price": 549,
+      "tag": "Floral",
+      "description": "Soft rose, peony, and a clean cotton finish in a travel-friendly tin.",
+      "image": "https://images.unsplash.com/photo-1602910344008-22f323cc1817?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Pink floral candle tin",
+      "category": "Tin Candles",
+      "subCategory": "Floral"
+    },
+    {
+      "code": "LUME-BST-106",
+      "model": "Cedarwood Noir",
+      "price": 899,
+      "tag": "Woody",
+      "description": "Deep cedar, smoky vanilla, and polished amber for evening rooms.",
+      "image": "https://images.unsplash.com/photo-1602874801007-bd458bb1b8b6?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Dark luxury candle jar",
+      "category": "Jar Candles",
+      "subCategory": "Woody"
+    },
+    {
+      "code": "LUME-BST-107",
+      "model": "Citrus Morning Jar",
+      "price": 699,
+      "tag": "Fresh",
+      "description": "Bright orange peel, bergamot, and neroli for sunny desks and kitchens.",
+      "image": "https://images.unsplash.com/photo-1602524818867-f9c2dd4d8d0b?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Fresh citrus candle jar",
+      "category": "Jar Candles",
+      "subCategory": "Fresh Citrus"
+    },
+    {
+      "code": "LUME-BST-108",
+      "model": "Lavender Sleep Candle",
+      "price": 749,
+      "tag": "Relax",
+      "description": "Lavender, chamomile, and soft musk poured for slow night routines.",
+      "image": "https://images.unsplash.com/photo-1602874801078-26e42ac2b99d?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Lavender candle beside flowers",
+      "category": "Wellness",
+      "subCategory": "Sleep Rituals"
+    },
+    {
+      "code": "LUME-BST-109",
+      "model": "Marble Pillar Trio",
+      "price": 1299,
+      "tag": "Decor",
+      "description": "Three marble-finish pillars for shelves, tablescapes, and event styling.",
+      "image": "https://images.unsplash.com/photo-1608755728617-aefab37d2edd?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Marble pillar candles",
+      "category": "Decor",
+      "subCategory": "Pillar Candles"
+    },
+    {
+      "code": "LUME-BST-110",
+      "model": "Jasmine Pearl Jar",
+      "price": 849,
+      "tag": "Elegant",
+      "description": "Jasmine, white tea, and pearl musk with a calm boutique finish.",
+      "image": "https://images.unsplash.com/photo-1603905179139-db12ab535ca9?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Elegant white candle jar",
+      "category": "Jar Candles",
+      "subCategory": "Floral"
+    },
+    {
+      "code": "LUME-BST-111",
+      "model": "Coffee Caramel Candle",
+      "price": 799,
+      "tag": "Cozy",
+      "description": "Roasted coffee, caramel drizzle, and toasted sugar for cafe corners.",
+      "image": "https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Warm caramel candle",
+      "category": "Jar Candles",
+      "subCategory": "Gourmand"
+    },
+    {
+      "code": "LUME-BST-112",
+      "model": "Ocean Mist Glass",
+      "price": 699,
+      "tag": "Aqua",
+      "description": "Sea salt, sage, and airy musk for bathrooms, bedrooms, and calm mornings.",
+      "image": "https://images.unsplash.com/photo-1612293905607-b003de9e54fb?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Fresh glass candle",
+      "category": "Jar Candles",
+      "subCategory": "Fresh Aqua"
+    },
+    {
+      "code": "LUME-BST-113",
+      "model": "Saffron Sandalwood",
+      "price": 999,
+      "tag": "Luxe",
+      "description": "Warm saffron, sandalwood, and golden resin for premium gifting.",
+      "image": "https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Luxury festive candle",
+      "category": "Luxury",
+      "subCategory": "Sandalwood"
+    },
+    {
+      "code": "LUME-BST-114",
+      "model": "Mini Votive Gift Box",
+      "price": 1099,
+      "tag": "Gift box",
+      "description": "A set of four mini votives with assorted fragrances and gift packaging.",
+      "image": "https://images.unsplash.com/photo-1543198126-a8ad8e47fb22?q=80&w=1200&auto=format&fit=crop",
+      "alt": "Mini candle gift box",
+      "category": "Gift Sets",
+      "subCategory": "Mini Votives"
+    }
+  ]
+
+}
