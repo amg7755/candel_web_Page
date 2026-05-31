@@ -293,9 +293,7 @@ renderCart();
 
 
 const form = document.getElementById("candle-inquiry-form");
-const URL = "https://script.google.com/macros/s/AKfycbycD46oVm3O0kii472H8cyPkStB_Y08ylsW5_81nU78KOV2fONMO5H_mrFbRYqGiVJsfA/exec"
-
-
+const URL = "https://script.google.com/macros/s/AKfycbwHFf3lCSqsWHbEGqSYLa66jWeb6o1yFrSfngXwBUfYumknQfDHdT0w02lQdopzeHbRgA/exec"
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
@@ -337,23 +335,6 @@ form.addEventListener("submit", async (e) => {
 });
 
 
-function doPost(e) {
-  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet1");
-
-  const data = JSON.parse(e.postData.contents);
-
-  sheet.appendRow([
-    data.name,
-    data.email,
-    data.phone,
-    data.message,
-    new Date()
-  ]);
-
-  return ContentService
-    .createTextOutput(JSON.stringify({ success: true }))
-    .setMimeType(ContentService.MimeType.JSON);
-}
 
 
 
