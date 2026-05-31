@@ -293,9 +293,16 @@ renderCart();
 
 
 const form = document.getElementById("candle-inquiry-form");
+const URL = "https://script.google.com/macros/s/AKfycbycD46oVm3O0kii472H8cyPkStB_Y08ylsW5_81nU78KOV2fONMO5H_mrFbRYqGiVJsfA/exec"
+
+
 
 form.addEventListener("submit", async (e) => {
   e.preventDefault();
+
+  const button = form.querySelector("button");
+  button.innerText = "Sending...";
+  button.disabled = true;
 
   const formData = {
     name: form.name.value,
@@ -306,7 +313,7 @@ form.addEventListener("submit", async (e) => {
 
   try {
     const response = await fetch(
-      "https://script.google.com/macros/s/AKfycbycD46oVm3O0kii472H8cyPkStB_Y08ylsW5_81nU78KOV2fONMO5H_mrFbRYqGiVJsfA/exec",
+      URL,
       {
         method: "POST",
         body: JSON.stringify(formData)
@@ -319,13 +326,34 @@ form.addEventListener("submit", async (e) => {
       alert("Thank you! Your inquiry has been received.");
       form.reset();
     } else {
-      alert("Failed to submit. Try again.");
+      alert("Failed to submit.");
     }
   } catch (err) {
-    alert("Network error. Please try later.");
+    alert("Network error. Try again.");
   }
+
+  button.innerText = "Send Inquiry";
+  button.disabled = false;
 });
 
+
+function doPost(e) {
+  const sheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName("Sheet1");
+
+  const data = JSON.parse(e.postData.contents);
+
+  sheet.appendRow([
+    data.name,
+    data.email,
+    data.phone,
+    data.message,
+    new Date()
+  ]);
+
+  return ContentService
+    .createTextOutput(JSON.stringify({ success: true }))
+    .setMimeType(ContentService.MimeType.JSON);
+}
 
 
 
