@@ -290,3 +290,52 @@ cartItemsEl.addEventListener("click", (event) => {
 
 loadProducts();
 renderCart();
+
+
+const form = document.getElementById("candle-inquiry-form");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  const formData = {
+    name: form.name.value,
+    email: form.email.value,
+    phone: form.phone.value,
+    message: form.message.value
+  };
+
+  try {
+    const response = await fetch(
+      "https://script.google.com/macros/s/AKfycbycD46oVm3O0kii472H8cyPkStB_Y08ylsW5_81nU78KOV2fONMO5H_mrFbRYqGiVJsfA/exec",
+      {
+        method: "POST",
+        body: JSON.stringify(formData)
+      }
+    );
+
+    const result = await response.json();
+
+    if (result.success) {
+      alert("Thank you! Your inquiry has been received.");
+      form.reset();
+    } else {
+      alert("Failed to submit. Try again.");
+    }
+  } catch (err) {
+    alert("Network error. Please try later.");
+  }
+});
+
+
+
+
+const button = form.querySelector("button");
+
+button.innerText = "Sending...";
+button.disabled = true;
+
+// after success/fail:
+button.innerText = "Send Inquiry";
+button.disabled = false;
+
+
