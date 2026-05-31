@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Handcrafted luxury candles for decor, gifting, festive moments, and custom bulk orders." />
+  <title>Lume Atelier | Handmade Luxury Candles</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page">
+    <nav class="nav" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Lume Atelier home">
+        <span class="brand-mark">L</span>
+        <span>Lume Atelier</span>
+      </a>
+      <div class="nav-links">
+        <a href="#collections">Collections</a>
+        <a href="#best-sellers">Best Sellers</a>
+        <a href="all-products.html">Candle Catalog</a>
+        <a href="#custom">Custom</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <a class="nav-cta" href="#collections">Shop Now</a>
+    </nav>
+
+    <a class="whatsapp-float" href="https://wa.me/919999999999?text=Hi%20Lume%20Atelier%2C%20I%20want%20to%20order%20candles" target="_blank" rel="noreferrer">
+      <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5.4 19.1 6.3 16A7.8 7.8 0 1 1 9 18.4l-3.6.7Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.1 8.7c.2-.4.3-.5.6-.5h.5c.2 0 .4.1.5.4l.6 1.4c.1.2.1.4 0 .6l-.4.5c-.1.1-.1.3 0 .5.4.8 1.1 1.5 2 1.9.2.1.3.1.5 0l.6-.7c.2-.1.4-.2.6-.1l1.4.7c.3.1.4.3.4.6v.4c0 .3-.1.5-.3.7-.6.6-1.5.8-2.4.5-2.7-.8-4.7-2.8-5.5-5.4-.2-.7 0-1.2.3-1.5Z" fill="currentColor"/></svg>
+      Order
+    </a>
+
+    <button class="cart-toggle" type="button" data-cart-open aria-label="Open cart">
+      Cart <span class="cart-count" data-cart-count>0</span>
+    </button>
+
+    <div class="cart-backdrop" data-cart-close></div>
+    <aside class="cart-drawer" aria-label="Shopping cart" data-cart-drawer>
+      <div class="cart-head">
+        <h2>Your Cart</h2>
+        <button class="icon-btn" type="button" data-cart-close aria-label="Close cart">x</button>
+      </div>
+      <p class="cart-note">Your WhatsApp message will include product code, model, quantity, and total.</p>
+      <div class="cart-items" data-cart-items></div>
+      <div class="cart-line">
+        <strong>Total</strong>
+        <strong data-cart-total>Rs. 0</strong>
+      </div>
+      <form class="cart-customer" data-cart-customer>
+        <label>
+          My name
+          <input type="text" name="customerName" placeholder="Enter your name" required />
+        </label>
+        <label>
+          Delivery city
+          <input type="text" name="deliveryCity" placeholder="Enter delivery city" required />
+        </label>
+        <label>
+          Customization note
+          <textarea name="customizationNote" placeholder="Fragrance, color, label name, date, or gift note"></textarea>
+        </label>
+        <p class="cart-error" data-cart-error>Please enter your name and delivery city.</p>
+      </form>
+      <div class="cart-actions" style="margin-top: 18px;">
+        <button class="btn btn-secondary" type="button" data-cart-clear>Clear</button>
+        <button class="btn btn-primary" type="button" data-cart-whatsapp>Send on WhatsApp</button>
+      </div>
+    </aside>
+
+    <header class="hero" id="top">
+      <div class="shell hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow"><span class="dot"></span> Small batch luxury candles</span>
+          <h1>Handcrafted Candles That Light Up Your Space</h1>
+          <p>Premium handmade candles for cozy homes, beautiful gifts, festive hampers, and custom bulk orders crafted with a soft luxury finish.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#collections">Shop Collection</a>
+            <a class="btn btn-secondary" href="#custom">Custom Orders</a>
+          </div>
+          <div class="stats" aria-label="Brand highlights">
+            <div class="stat"><strong>100%</strong><span>Hand poured</span></div>
+            <div class="stat"><strong>48h</strong><span>Quick replies</span></div>
+            <div class="stat"><strong>500+</strong><span>Gift orders</span></div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <img src="https://images.unsplash.com/photo-1572726729207-a78d6feb18d7?q=80&w=1600&auto=format&fit=crop" alt="Two amber glass candle containers glowing with warm light" />
+          <div class="hero-note">Gift-ready packaging, custom labels, and fragrances made for memorable spaces.</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="collections">
+        <div class="shell">
+          <div class="section-head center reveal">
+            <span class="eyebrow"><span class="dot"></span> Featured collections</span>
+            <h2>Curated candles for every room, ritual, and celebration</h2>
+            <p>Each piece is poured, finished, packed, and styled to feel special before it is even lit.</p>
+          </div>
+          <div class="collections" data-collections></div>
+        </div>
+      </section>
+
+      <section class="band" id="best-sellers">
+        <div class="shell">
+          <div class="section-head reveal">
+            <span class="eyebrow"><span class="dot"></span> Best sellers</span>
+            <h2>Luxury pieces customers keep coming back for</h2>
+          </div>
+          <div class="products" data-products></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="shell">
+          <div class="section-head center reveal">
+            <h2>Why customers choose us</h2>
+            <p>Luxury is in the little decisions: wax, wick, finish, packaging, and the way every order is handled.</p>
+          </div>
+          <div class="reasons">
+            <div class="reason reveal"><div class="reason-icon"><svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 21s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 11c0 5.6-7 10-7 10Z" stroke="currentColor" stroke-width="1.8"/></svg></div><div><h3>Handmade with care</h3><p>Small-batch pouring and detailed finishing.</p></div></div>
+            <div class="reason reveal"><div class="reason-icon"><svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M12 3c3 3.2 5 6.1 5 10a5 5 0 0 1-10 0c0-3.9 2-6.8 5-10Z" stroke="currentColor" stroke-width="1.8"/></svg></div><div><h3>Premium quality wax</h3><p>Smooth finish and clean, balanced fragrance.</p></div></div>
+            <div class="reason reveal"><div class="reason-icon"><svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M7 7v13h10V7M9 7a3 3 0 0 1 6 0" stroke="currentColor" stroke-width="1.8"/></svg></div><div><h3>Custom & bulk orders</h3><p>Labels, colors, scents, and packaging options.</p></div></div>
+            <div class="reason reveal"><div class="reason-icon"><svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M20 12v8H4v-8M3 8h18v4H3V8ZM12 20V8M12 8H8.5A2.5 2.5 0 1 1 12 5.7M12 8h3.5A2.5 2.5 0 1 0 12 5.7" stroke="currentColor" stroke-width="1.8"/></svg></div><div><h3>Perfect for gifting</h3><p>Beautiful presentation for every occasion.</p></div></div>
+            <div class="reason reveal"><div class="reason-icon"><svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M3 7h11v10H3V7Zm11 3h3l3 3v4h-6v-7ZM7 19a2 2 0 1 0 0-4 2 2 0 0 0 0 4Zm10 0a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" stroke="currentColor" stroke-width="1.8"/></svg></div><div><h3>Fast delivery</h3><p>Clear timelines and responsive order updates.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="custom">
+        <div class="shell">
+          <div class="custom reveal">
+            <div class="custom-inner">
+              <span class="eyebrow"><span class="dot"></span> Custom candle design</span>
+              <h2>Custom & bulk orders for every celebration</h2>
+              <p>Wedding gifts, birthdays, return gifts, festive hampers, events, and corporate gifting crafted to match your moodboard, quantity, and budget.</p>
+              <div class="chips">
+                <span class="chip">Weddings</span>
+                <span class="chip">Events</span>
+                <span class="chip">Birthdays</span>
+                <span class="chip">Return gifts</span>
+                <span class="chip">Corporate gifting</span>
+              </div>
+              <a class="btn btn-secondary" href="https://wa.me/919999999999?text=I%20want%20to%20request%20a%20custom%20candle%20design">Request Custom Candle Design</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="shell">
+          <div class="section-head center reveal">
+            <h2>Customer reviews</h2>
+            <p>Realistic words from customers who care about fragrance, finish, and presentation.</p>
+          </div>
+          <div class="reviews">
+            <article class="card review reveal"><div class="stars">★★★★★</div><blockquote>"The candle set looked expensive and smelled beautiful. I ordered again for Diwali gifting."</blockquote><strong>Priya Sharma</strong><span>Festive hamper customer</span></article>
+            <article class="card review reveal"><div class="stars">★★★★★</div><blockquote>"We used custom candles as wedding return gifts. The labels and packaging were perfect."</blockquote><strong>Ananya Mehta</strong><span>Bulk wedding order</span></article>
+            <article class="card review reveal"><div class="stars">★★★★★</div><blockquote>"Very aesthetic, very warm, and the whole unboxing felt like a premium boutique brand."</blockquote><strong>Riya Kapoor</strong><span>Home decor buyer</span></article>
+          </div>
+        </div>
+      </section>
+
+      <section class="band">
+        <div class="shell">
+          <div class="section-head center reveal">
+            <span class="eyebrow"><span class="dot"></span> Instagram gallery</span>
+            <h2>Styled for feeds, shelves, hampers, and cozy corners</h2>
+          </div>
+          <div class="gallery">
+            <a href="https://instagram.com" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1603006905003-be475563bc59?q=80&w=900&auto=format&fit=crop" alt="Instagram candle post one" /></a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1612293905607-b003de9e54fb?q=80&w=900&auto=format&fit=crop" alt="Instagram candle post two" /></a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1608755728617-aefab37d2edd?q=80&w=900&auto=format&fit=crop" alt="Instagram candle post three" /></a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1603905179139-db12ab535ca9?q=80&w=900&auto=format&fit=crop" alt="Instagram candle post four" /></a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1608571423902-eed4a5ad8108?q=80&w=900&auto=format&fit=crop" alt="Instagram candle post five" /></a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1515377905703-c4788e51af15?q=80&w=900&auto=format&fit=crop" alt="Instagram candle post six" /></a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1543198126-a8ad8e47fb22?q=80&w=900&auto=format&fit=crop" alt="Instagram candle post seven" /></a>
+            <a href="https://instagram.com" target="_blank" rel="noreferrer"><img src="https://images.unsplash.com/photo-1612179543058-ab74d388e0ce?q=80&w=900&auto=format&fit=crop" alt="Instagram candle post eight" /></a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="shell">
+          <div class="section-head center reveal">
+            <h2>Frequently asked questions</h2>
+          </div>
+          <div class="faq-list reveal">
+            <details open><summary>How to order?</summary><p>Choose a collection and tap Quick Order or message us directly on WhatsApp with the product name, quantity, and delivery city.</p></details>
+            <details><summary>Delivery timelines?</summary><p>Ready products usually ship in 3 to 7 business days. Custom and bulk orders depend on quantity and design requirements.</p></details>
+            <details><summary>Customization available?</summary><p>Yes. We can customize fragrance, color, label, packaging, message cards, and hamper styling.</p></details>
+            <details><summary>Bulk order options?</summary><p>Yes. We support weddings, corporate gifting, festive hampers, birthdays, events, and return gifts with quote-based pricing.</p></details>
+          </div>
+        </div>
+      </section>
+
+      <section class="band" id="contact">
+        <div class="shell contact">
+          <div class="section-head reveal">
+            <span class="eyebrow"><span class="dot"></span> Contact</span>
+            <h2>Let us create something warm and memorable</h2>
+            <p>For quick orders, custom inquiries, or bulk gifting, send the details and we will respond with options, timelines, and pricing.</p>
+            <div class="contact-lines">
+              <a href="https://wa.me/919999999999" target="_blank" rel="noreferrer">WhatsApp: +91 99999 99999</a>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram: @lumeatelier</a>
+              <a href="mailto:hello@lumeatelier.com">Email: hello@lumeatelier.com</a>
+            </div>
+            <div class="actions">
+              <a class="btn btn-primary" href="https://wa.me/919999999999?text=Hi%2C%20I%20want%20to%20order%20candles">WhatsApp Order</a>
+              <a class="btn btn-secondary" href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+            </div>
+          </div>
+          <div class="contact-panel reveal">
+            <form name="candle-inquiry" method="POST" data-netlify="true">
+              <input type="hidden" name="form-name" value="candle-inquiry" />
+              <input type="text" name="name" placeholder="Your name" required />
+              <input type="email" name="email" placeholder="Email address" required />
+              <input type="tel" name="phone" placeholder="WhatsApp number" />
+              <textarea name="message" placeholder="Tell us about your order, quantity, occasion, city, and preferred style" required></textarea>
+              <button class="btn btn-primary" type="submit">Send Inquiry</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="shell footer-grid">
+        <div>
+          <div class="footer-brand">Lume Atelier</div>
+          <p>Handcrafted luxury candles for homes, gifts, events, and beautiful everyday rituals.</p>
+        </div>
+        <div class="footer-links">
+          <a href="#collections">Collections</a>
+          <a href="all-products.html">Candle Catalog</a>
+          <a href="#custom">Bulk Orders</a>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer">Instagram</a>
+          <a href="mailto:hello@lumeatelier.com">Email</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
