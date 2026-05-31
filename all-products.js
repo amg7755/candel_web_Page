@@ -1,5 +1,5 @@
 const allProductsEl = document.querySelector("[data-all-products]");
-const WHATSAPP_NUMBER = "+919554904008";
+const WHATSAPP_NUMBER = "+917755832501";
 const BRAND_CODE = "LUME";
 const CART_KEY = "lume_candle_cart";
 
